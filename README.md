@@ -16,7 +16,7 @@
 git clone https://github.com/cpmnuker/tool.git
 ```
 ```
-cd CPMNuker
+cd tool
 ```
 ```
 pip install -r requirements.txt
