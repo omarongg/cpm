@@ -9,7 +9,6 @@
 import random
 import cpmnuker
 import base64
-from cfonts import render
 from time import sleep
 import os, signal, sys
 from rich.console import Console
@@ -41,8 +40,8 @@ def gradient_text(text, colors):
 
 def banner(console):
     os.system('cls' if os.name == 'nt' else 'clear')
-    print(render(base64.b64decode("Q1BNTnVrZXI=").decode('utf-8'), colors=['red', 'green']))
-    console.print("[bold green][*] CPMNuker[/bold green]: Car Parking Multiplayer Hacking Tool.")
+    console.print(f"[bold red][*] {base64.b64decode("V2VsY29tZSB0byBDUE1OdWtlciwgdGhlIGhhY2tlcnMgdG9vbGtpdA==").decode('utf-8')}[/bold red].", "\n")
+    console.print("[bold green][*] Description[/bold green]: Car Parking Multiplayer Hacking Tool.")
     console.print(f"[bold green][*] Telegram[/bold green]: [bold blue]@{base64.b64decode("Q1BNTnVrZXJPZmZpY2lhbA==").decode('utf-8')}[/bold blue] or [bold blue]@{base64.b64decode("Q1BNTnVrZXJDaGF0").decode('utf-8')}[/bold blue].")
     console.print("[bold red]==================================================[/bold red]")
     console.print("[bold yellow][!] Note[/bold yellow]: Logout from CPM before using this tool !.", end="\n\n")
