@@ -40,11 +40,6 @@ def gradient_text(text, colors):
 
 def banner(console):
     os.system('cls' if os.name == 'nt' else 'clear')
-    console.print("[bold green][*] Description[/bold green]: Car Parking Multiplayer Hacking Tool.")
-    console.print(f"[bold green][*] Telegram[/bold green]: [bold blue]@{base64.b64decode("Q1BNTnVrZXJPZmZpY2lhbA==").decode('utf-8')}[/bold blue] or [bold blue]@{base64.b64decode("Q1BNTnVrZXJDaGF0").decode('utf-8')}[/bold blue].")
-    console.print("[bold red]==================================================[/bold red]")
-    console.print("[bold yellow][!] Note[/bold yellow]: Logout from CPM before using this tool !.", end="\n\n")
-
 def load_player_data(cpm):
     response = cpm.get_player_data()
     if response.get('ok'):
